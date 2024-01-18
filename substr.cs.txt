@@ -1,0 +1,20 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+       string name="collage";
+       int count=0;
+       for(int i=0;i<name.Length+1;i++){
+              Console.WriteLine("the number of charecter in string:" + (i)+ "number of count of string:" +(count+1));
+           for(int j=0;j<name.Length-(i-1);j++)
+               Console.WriteLine(name.Substring(j,i));
+            count=name.Length-(i+1);
+           
+       }
+    }
+}
